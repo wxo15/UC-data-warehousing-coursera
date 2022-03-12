@@ -1,0 +1,48 @@
+Step 1: Arrange the remaining FDs into groups by determinant
+PatNo -> PatAge, PatZip9
+PatZip9 -> PatCity
+VisitNo -> VisitDate, PatNo
+ProvNo -> ProvSpeciality, ProvEmail
+VisitNo,ProvNo -> Diagnosis
+ProvEmail -> ProvNo
+
+
+
+Step 2: For each FD group, make a table with the determinant as the primary key
+
+Patient:
+Columns (PatNo,PatAge,PatZip9)
+PK: PatNo
+FK: PatZip9 REFERENCES PatientZip
+
+PatientZip:
+Columns (PatZip9,PatCity)
+PK: PatZip9
+
+Visit:
+Columns (VisitNo,VisitDate,PatNo)
+PK: VisitNo
+FK: PatNo REFERENCES Patient
+
+Provider:
+Column (ProvNo,ProvSpeciality,ProvEmail)
+PK: ProvNo
+FK: ProvEmail REFERENCES ProviderEmail
+
+ProvVisit:
+Column (VisitNo,ProvNo,Diagnosis)
+PK: VisitNo, ProvNo
+FK: ProvNo REFERENCES Provider, VisitNo REFERENCES Visit
+
+ProviderEmail:
+Column (ProvEmail,ProvNo)
+PK: ProvEmail
+FK: ProvNo REFERENCES Provider
+
+
+
+Step 3: Merge tables with the same columns 
+
+Merge Provider and ProviderEmail and make ProvEmail unique
+Provider(ProvNo,ProvSpeciality,ProvEmail)
+UNIQUE(ProvEmail)

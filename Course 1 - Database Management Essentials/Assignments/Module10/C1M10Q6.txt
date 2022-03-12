@@ -1,0 +1,10 @@
+Entity Type Rule x2: Owner, Property
+1–M Relationship Rule x0
+M-N Relationship Rule x1: Shares table with combined PK
+Identifying Relationship Rule x0
+    
+
+Owner (OwnId,OwnName,OwnPhone,PRIMARY KEY(OwnId))
+Property (PropId,BIdgName,UnitNo,Bdrms,PRIMARY KEY(PropId))
+
+Shares (OwnId,PropId,StartWeek,EndWeek, PRIMARY KEY(OwnId,PropId), FOREIGN KEY(OwnId) REFERENCES Owner, FOREIGN KEY(PropId) REFERENCES Property)

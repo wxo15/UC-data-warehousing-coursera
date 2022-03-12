@@ -1,0 +1,14 @@
+1-M Relationship Rule x4
+1. Loan and Institution through InstID (Mandatory)
+2. Loan and Student through StdNo (Mandatory)
+3. Loan and Lender through LenderNo (Mandatory)
+4. DisburseLine and Loan through LoanNo (Mandatory)
+
+
+
+Institution (InstID,InstName,InstMascot,PRIMARY KEY(InstID))
+Loan (LoanNo,InstID,StdNo,LenderNo,ProcDate,DisbMethod,DisbBank,DateAuth,NoteValue,Subsidized,Rate, PRIMARY KEY(LoanNo), FOREIGN KEY(InstID) REFERENCES Institution, FOREIGN KEY(StdNo) REFERENCES Student, FOREIGN KEY(LenderNo) REFERENCES Lender, InstID NOT NULL, StdNo NOT NULL, LenderNo NOT NULL)
+Student (StdNo, StdName,StdAddress, StdCity, StdState, StdZip, StdEmail, PRIMARY  KEY(StdNo))
+DisburseLine (DateSent,LoanNo,Amount,OrigFree,GuarFree, PRIMARY KEY(DateSent), FOREIGN KEY(LoanNo) REFERENCES Loan, LoanNo NOT NULL)
+Lender (LenderNo,LendName,PRIMARY KEY(LenderNo))
+

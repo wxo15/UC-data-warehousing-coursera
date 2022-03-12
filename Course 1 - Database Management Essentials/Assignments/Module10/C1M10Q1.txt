@@ -1,0 +1,16 @@
+Entity Type Rule Application x5
+1. Institute
+2. Loan
+3. Student
+4. DisburseLine
+5. Lender
+
+
+Institution (InstID,InstName,InstMascot,PRIMARY KEY(InstID))
+Loan (LoanNo,ProcDate,DisbMethod,DisbBank,DateAuth,NoteValue, Subsidized,Rate, PRIMARY KEY(LoanNo)))
+Student (StdNo, StdName,StdAddress, StdCity, StdState, StdZip, StdEmail, PRIMARY  KEY(StdNo))
+DisburseLine (DateSent,Amount,OrigFree,GuarFree,PRIMARY KEY(DateSent))
+Lender (LenderNo,LendName,PRIMARY KEY(LenderNo))
+
+
+

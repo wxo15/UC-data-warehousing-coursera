@@ -1,0 +1,43 @@
+# Q1 - Semantic Error
+SELECT EVENTREQUEST.EventNo, DateHeld, Status, EstCost
+FROM EVENTREQUEST, EMPLOYEE, FACILITY, EVENTPLAN
+WHERE estaudience > 5000
+  AND EVENTPLAN.empno = EMPLOYEE.empno 
+  AND EVENTREQUEST.facno = FACILITY.facno
+  AND facname = 'Football stadium' 
+  AND empname = 'Mary Manager'
+  # Added join condition
+  AND EVENTREQUEST.EventNo = EVENTPLAN.EventNo;
+  
+  
+# Q2 - Redundancy
+SELECT EVENTREQUEST.eventno, dateheld, status, estcost
+FROM EVENTREQUEST
+WHERE estaudience > 4000;
+
+# Q3 - Redundancy
+SELECT EVENTREQUEST.eventno, dateheld, status, estcost
+FROM EVENTREQUEST, FACILITY
+WHERE estaudience > 5000
+  AND EVENTREQUEST.facno = FACILITY.facno
+  AND facname = 'Football stadium' ;
+  
+# Q4 - Syntax (misspelled Between, need to specify tablename for eventno)
+SELECT DISTINCT EVENTREQUEST.eventno, dateheld, status, estcost
+FROM EVENTREQUEST, EMPLOYEE, EVENTPLAN
+WHERE estaudience BETWEEN 5000 AND 10000
+  AND EVENTPLAN.empno = EMPLOYEE.empno 
+  AND EVENTREQUEST.eventno = EVENTPLAN.eventno
+  AND empname = 'Mary Manager';
+  
+# Q5
+SELECT EVENTPLAN.planno, lineno, resname, numberfld, timestart, timeend
+FROM EVENTREQUEST, FACILITY, EVENTPLAN, EVENTPLANline, resourcetbl
+WHERE estaudience = '10000'
+  AND EVENTPLAN.planno = EVENTPLANline.planno 
+  AND EVENTREQUEST.facno = FACILITY.facno
+  AND facname = 'Basketball arena' 
+  AND EVENTPLANline.resno = resourcetbl.resno
+  AND EVENTREQUEST.eventno = EVENTPLAN.eventno;
+
+  

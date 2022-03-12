@@ -1,0 +1,20 @@
+Entity 2
+Attribute Name Rule
+Change non-PK Attribute2-1 to Attribute2-2
+
+Rel7 - From Entity 6 to 7
+Identification Dependency Cardinality Rule
+Change (0-M to 1-N) relationship to (0-M to 1)
+
+Rel6 - From Entity 4 to 7
+Identifying Relationship Rule
+Change to non-dentifying relationship
+
+Rel5 - From 2 to 4
+Redundant Foreign Key
+Remove Attribute4-1
+
+Rel2 - From 2 to 1
+Redundant Foreign Key
+Remove Attribute1-1
+

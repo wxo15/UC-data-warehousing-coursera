@@ -1,0 +1,9 @@
+Entity Type Rule x1: Account
+1–M Relationship Rule x1: Account.ParentNo (Optional)
+M-N Relationship Rule x0
+Identifying Relationship Rule x0
+    
+
+Account (Acctid, ParentNo, AcctName, Balance, PRIMARY KEY(Acctid), FOREIGN KEY(ParentNo) REFERENCES Account)
+
+

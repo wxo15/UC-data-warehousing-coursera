@@ -1,0 +1,11 @@
+Insertion
+Can’t insert a new visit unless provider detail is entered too.
+Example: For entering new Visit details like V82120, you need to enter patient and provider details too.
+
+Update
+Have to change multiple rows if details of patient changes.
+Example: To update patient P1's age, rows 1 and 2 need to be updated.
+
+Delete
+Deleting a row of patient causes deletion of provider.
+Example: Deletion of patient P2, row 4 ie provider D3 is deleted as well.

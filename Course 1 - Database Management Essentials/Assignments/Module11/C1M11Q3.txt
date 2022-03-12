@@ -1,0 +1,5 @@
+Already BCNF. Just need to add unique constraints to the mentioned columns
+
+Lender: LenderName
+Institution: InstName
+Student: StdEmail
