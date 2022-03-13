@@ -1,0 +1,14 @@
+Franchise: 350 	(350 Franchise Rows, 200 Franchise Postal Codes)
+ProductService: 21	(20 ServiceCategory, 1 spreadsheet)
+Member: 80000		(50000 rows + 150 * 200) 
+Merchandise: 500	(500 merchandise row)
+Calendar: 365		(365 Days per year)
+
+FactTable: 610000	(100000 service purchase, 300*200 special events, 450000 Contains) 
+
+
+Sparsity	= 1 - ( fact table size / product of dimensions )
+		= 1 - ( 610000 / (350*21*80000*500*365) ) 
+		= 0.99999999431
+
+The data cube has less than 1% non-zero cells.

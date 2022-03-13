@@ -1,0 +1,37 @@
+Dimensions: 
+(From ERD, spreadsheet) Franchise, ProductService, Member, Merchandise
+(Standard data warehouse dimension) Calendar
+
+
+Dimension hierarchies:
+Calendar
+FranchRegion in Franchise
+MmbrEmail in Member
+
+1) Franchise
+	FranchId: ERD
+	FranchRegion: ERD
+	FranchPostalCode: ERD
+	FranchModelType: ERD
+
+2) ProductService: ServiceCategory + spreadsheet
+	ProdId : ERD + spreadsheet
+	ProdName: ERD + spreadsheet (ServCatName) | (Event Name) 
+	ProdType : spreadsheet (Event Type Code) 
+
+3) Member
+	MmbrId:  ERD + spreadsheet (Corporate CustomerId)
+	MmbrName:  ERD + spreadsheet (Corporate Customer Name)
+ 	MmbrZip: ERD + maybe spreadsheet (Corporate Location)
+	MmbrEmail: ERD
+	MmbrType: ERD
+
+4) Merchandise
+	MerchId: ERD only.
+	MerchName: ERD only.
+	MerchType: ERD only.
+
+5) Calendar
+	Dates in ERD + spreadsheet. EventDate can be added as ServPurchDate. (year -> month -> day)
+	
+

@@ -1,0 +1,76 @@
+1) Franchise
+FranchId	FranchRegion	FranchPostalCode	FranchModelType
+F1		Northwest	98011			Full
+F2		Mountain	80111			Medium
+F3		Central	45236			Limited
+
+
+2) ProductService
+ProdId	ProdName	ProdType
+M1	Gold		Membership
+M2	Platinum	Membership
+M3	value		Membership
+PSC1	Ball machine	Service
+PSC2	Private lesson	Service
+PSC3	Adult class	Service
+PSC4	Child class	Service
+PS1	Adult social	Special Event
+PS2	Pioneer social	Special Event
+PS3	Team practice	Special Event
+
+
+3) Member
+MemId	MemName	MemDate	MemEmail		MemType	MemZip
+1111	Joe		1-Feb-2009	joe@serv1.com		M1		98011
+2222	Mary		1-Jan-2010	mary@serv2.com		M2		80112
+3333	Sue		3-Mar-2011	sue@serv3.com		M3		45327
+4444	George				george@serv4.com	G		45236
+5555	Frist Data						C		80113
+6666	DU Tennis						C		89256
+7777	Creek High School					C		83698
+
+
+4) Merchandise
+MerchId	MerchName		MerchType
+MC1		Wilson balls		Balls
+MC2		Wilson racket		Racket
+MC3		Adidas shoes		Shoes
+MC4		Racket stringing	Racket
+
+
+5) Calendar
+CalId	CalDay		CalMonth	CalYear
+C1	10		2		2013
+C2	11		2		2013
+C3	12		2		2013
+C4	13		2		2013
+C5	14		2		2013
+C6	15		2		2013
+C7	16		2		2013
+C8	17		2		2013
+C9	18		2		2013
+C10	19		2		2013
+C11	20		2		2013
+C12	21		2		2013
+
+
+6) Fact table
+RecordNo	MerchID	MemID	CalID	ProdID	FranchID	SalesQty	SalesUnitPrice	SalesTotalAmt	isService	isMerchandise
+1		MC1		1111	C1	NULL	F1		2		3		6		Yes		No
+2		MC2		1111	C1	NULL	F1		1		200		200		Yes		No
+3		MC4		2222	C3	NULL	F2		1		40		40		Yes		No
+4		MC3		3333	C3	NULL	F3		1		100		100		Yes		No
+5		MC4		4444	C4	NULL	F1		1		40		40		Yes		No
+6		NULL		1111	C3	PSC1	F2		1		15		15		No		Yes
+7		NULL		2222	C4	PSC2	F3		1		75		75		No		Yes
+8		NULL		4444	C5	PSC3	F1		1		150		150		No		Yes
+9		NULL		5555	C3	PS1	F2		1		1000		1000		No		Yes
+10		NULL		6666	C4	PS2	F3		1		500		500		No		Yes
+11		NULL		7777	C12	PS3	F2		1		200		200		No		Yes
+12		NULL		1111	C2	M2	F3		1		800		800		No		Yes
+13		NULL		2222	C3	M1	F2		1		1000		1000		No		Yes
+14		NULL		3333	C4	M2	F1		1		300		300		No		Yes
+
+
+
+

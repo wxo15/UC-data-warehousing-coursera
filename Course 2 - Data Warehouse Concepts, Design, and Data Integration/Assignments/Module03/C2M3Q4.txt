@@ -1,0 +1,42 @@
+Fact table:
+SalesRecord
+- SalesRecordNo (PK)
+- SalesQty (Contains Table)
+- SalesUnitPrice
+- SalesTotalAmt
+- isService (Yes or No)
+- isMerchandise (Yes or No)
+
+
+Dimension tables:
+1) Franchise
+- FranchId (primary key)
+- FranchRegion
+- FranchPostalCode
+- FranchModelType
+
+2) Member
+- MemId (Primary Key)
+- MemName
+- MemZip
+- MemDate
+- MemEmail
+- MemType
+
+3) Calendar
+- CallId (primary key)
+- CallDay 
+- CallMonth
+- CallYear
+
+4) ProductService 
+- ProdId(Primary Key)
+- ProdName
+- ProdType
+
+5) Merchandise
+- MerchId (Primary Key)
+- MerchName
+- MerchType
+ 
+The diagram is a star schema, with the fact table at the center and dimension tables connected to it with 1-M relationships.

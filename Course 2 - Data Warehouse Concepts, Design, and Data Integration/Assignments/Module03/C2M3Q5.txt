@@ -1,0 +1,15 @@
+1) MemDate - absent for Guest Members and Corporate Customers in the special events worksheet.
+
+2) MemName - needs to be parsed from Corporate Customers name in spreadsheet.
+
+3) Franchise Name - absent for special events. Be given a dummy value.
+
+4) MemType - Guest, Corporate and Other.
+
+5) SalesUnitPrice - given for Merchandise, Service, Special Events. For Membership, from MemberType table.
+
+6) isMerchandise - has to be set to yes or no
+
+7) isService - has to be set to yes or no
+
+8) SalesRecord table will have NuLL values as when it is merchandise there will be no ProdId and when it is ProductService there will be no MerchId.

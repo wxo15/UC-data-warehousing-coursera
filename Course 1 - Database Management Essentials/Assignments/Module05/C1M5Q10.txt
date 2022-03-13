@@ -11,9 +11,10 @@ WHERE estaudience > 5000
   
   
 # Q2 - Redundancy
-SELECT EVENTREQUEST.eventno, dateheld, status, estcost
-FROM EVENTREQUEST
-WHERE estaudience > 4000;
+SELECT DISTINCT eventrequest.eventno, dateheld, status, estcost
+FROM eventrequest, eventplan
+WHERE estaudience > 4000
+  AND eventplan.eventno = eventrequest.eventno;
 
 # Q3 - Redundancy
 SELECT EVENTREQUEST.eventno, dateheld, status, estcost

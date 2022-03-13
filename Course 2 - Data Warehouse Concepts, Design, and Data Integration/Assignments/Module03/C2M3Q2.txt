@@ -1,0 +1,9 @@
+The measures mostly come from the Sale table, Contains table for merchandise sales and ServPuchase table for service purchases. Other details of Special Events are from spreadsheet. 
+
+
+- Qty: ERD Contains table, additive measure
+- MemberShip Price: MemTypePrice from MemberType Table, non-additive snapshot measure.
+- Merchandise: Unit Price of Merchandise (MerchPrice), non-additive snapshot measure.
+- Fact Table:
+	Service: ERD Service Category (ServCatPrice), non-additive measure.
+	SpecialEvents: spreadsheet (Amount), non-additive measure.
