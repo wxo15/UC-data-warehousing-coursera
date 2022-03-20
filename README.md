@@ -5,7 +5,7 @@
 ## Courses:
 * [Course 1](https://www.coursera.org/learn/database-management) - Database Management Essentials - **Done**
 * [Course 2](https://www.coursera.org/learn/dwdesign) - Data Warehouse Concepts, Design, and Data Integration - **Done**
-* [Course 3](https://www.coursera.org/learn/dwrelational) - Relational Database Support for Data Warehouses - **Not started**
+* [Course 3](https://www.coursera.org/learn/dwrelational) - Relational Database Support for Data Warehouses - **Done**
 * [Course 4](https://www.coursera.org/learn/business-intelligence-tools) - Business Intelligence Concepts, Tools, and Applications - **Not started**
 * [Course 5](https://www.coursera.org/learn/data-warehouse-bi-building) - Design and Build a Data Warehouse for Business Intelligence Implementation - **Not started**
 
@@ -32,6 +32,14 @@
 - Module 4: Data Integration Concepts, Processes, and Techniques
 - Module 5: Architectures, Features, and Details of Data Integration Tools
 
+### 3. Relational Database Support for Data Warehouses
+- Module 1: DBMS Extensions and Example Data Warehouses
+- Module 2: SQL Subtotal Operators
+- Module 3: SQL Analytic Functions
+- Module 4: Materialized View Processing and Design
+- Module 5: Physical Design and Governance
+
+
 ## Tools
 - Generic DBMS (MySQL, PostgresSQL, Oracle etc)
 - WebPivotTable
@@ -39,13 +47,24 @@
 - Talend Open Studio
 
 
+## Installation
+### PostgresSQL Setup
+`sudo apt install postgresql postgresql-contrib`
+
 ## MySQL Setup
 ### Installation
 [APT Setup](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-setup)
 
-### Start-up
-Run the following in terminal:
-`systemctl status mysql`
-`systemctl start mysql`
-`systemctl stop mysql`
+## Start-up
+### Services (terminal)
+`systemctl status mysql` or `systemctl status postgresql`
+`systemctl start mysql` or `systemctl start postgresql`
+`systemctl stop mysql` or `systemctl start postgresql`
+
+### Postgres login and create DB (terminal)
+`sudo -u postgres psql`
+`CREATE DATABASE UnivDB;`
+`GRANT ALL PRIVILEGES ON DATABASE UnivDB to wxooi15;`
+`\q`
+
 
