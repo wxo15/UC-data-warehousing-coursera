@@ -1,0 +1,33 @@
+Q1: Analysis of all the visualizations with respect to how it is helping you find the Key Performance Indicators and the causes of various problems identified.
+
+
+Revenue trend 
+- Tells us that the revenue across three locations is comparable until middle of February, when they diverge.
+- Lower Manhattan shows a drop in revenue, and Upper West Side shows a rise.
+
+Avg Revenue vs Order Count By Day of Week
+- Lower Manhattan shows the smallest boxes and lightest shade of blue. This means the order count and the average revenue are both contributing to this.
+
+Order and Item Count Correlation
+- Shows correlation between item count and order count.
+- Lower Manhattan is almost always below the average.
+- Upper West Side is almost always above the average.
+
+Avg Scores by ZipCode
+- Shows how the scores are distributed by zipcode.
+
+Revenue Performance vs Avg Health Score
+- There is a correlation between the score and the revenue. When the revenue drops, the score increase.
+- This hints that improving the health inspection score could improve revenue.
+
+Avg Scores by Boro
+- Shows if there is any cuisines that perform well across boroughs.
+
+
+
+Q2: What more could you have done other than what is included in the exercise to achieve better analysis of both the datasets?
+
+- A chart to compare revenue against days of the week across location might help to identify if there is abnormaly for Lower Manhattan. It is shown indirectly in the first page's heatmap, but it is not immediately obvious.
+
+
+

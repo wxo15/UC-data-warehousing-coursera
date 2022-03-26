@@ -6,7 +6,7 @@
 * [Course 1](https://www.coursera.org/learn/database-management) - Database Management Essentials - **Done**
 * [Course 2](https://www.coursera.org/learn/dwdesign) - Data Warehouse Concepts, Design, and Data Integration - **Done**
 * [Course 3](https://www.coursera.org/learn/dwrelational) - Relational Database Support for Data Warehouses - **Done**
-* [Course 4](https://www.coursera.org/learn/business-intelligence-tools) - Business Intelligence Concepts, Tools, and Applications - **Not started**
+* [Course 4](https://www.coursera.org/learn/business-intelligence-tools) - Business Intelligence Concepts, Tools, and Applications - **Done**
 * [Course 5](https://www.coursera.org/learn/data-warehouse-bi-building) - Design and Build a Data Warehouse for Business Intelligence Implementation - **Not started**
 
 
@@ -39,21 +39,29 @@
 - Module 4: Materialized View Processing and Design
 - Module 5: Physical Design and Governance
 
+### 4. Business Intelligence Concepts, Tools, and Applications
+- Module 1: Decision Making and Decision Support Systems
+- Module 2: Business Intelligence Concepts and Platform Capabilities
+- Module 3: Data Visualization and Dashboard Design
+- Module 4: Business Performance Management System
+- Module 5: BI Maturity, Strategy, and Summative Project
+
 
 ## Tools
 - Generic DBMS (MySQL, PostgresSQL, Oracle etc)
 - WebPivotTable
 - Pentaho Data Integration
-- Talend Open Studio
-
+- MicroStrategy Workstation
 
 ## Installation
-### PostgresSQL Setup
+### PostgresSQL
 `sudo apt install postgresql postgresql-contrib`
 
-## MySQL Setup
-### Installation
+### MySQL
 [APT Setup](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-setup)
+
+### MicroStrategy Workstation
+[Link](https://www.dropbox.com/s/p4kd5nwtaeulcw0/MicroStrategy%20Workstation%2011.3.3.zip?dl=0)
 
 ## Start-up
 ### Services (terminal)
