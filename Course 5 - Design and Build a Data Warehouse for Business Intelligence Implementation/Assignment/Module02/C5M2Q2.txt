@@ -1,0 +1,94 @@
+Part 1
+
+Data Source			Measures			Aggregation Properties
+Financial Sales Summary	Actual_Units			All additive
+				Forecase_Units
+				Actual_Amount
+				Forecast_Amount
+				
+Financial Cost Summary		Actual_Units			All additive
+				Actual_Labor_Cost
+				Actual_Material_Cost
+				Actual_Machine_Cost
+				Actual_Overhead_Cost
+				Budget_Units
+				Budget_Labor_Cost
+				Budget_Material_Cost
+				Budget_Machine_Cost
+				Budget_Overhead_Cost
+				
+Lead File			Quote_Qty			Quote_Qty, Quote_Value are additive
+				Quote_Price			Quote_Price, Success are not additive
+				Quote_Value
+				Success
+
+ERP - Job			Unit_Price			Unit price not additive
+				Quantity_Ordered		Others are additive
+				Quotation_Amount
+				Quotation_Ordered
+
+ERP - SubJob			Cost_Labor			All additive
+				Cost_Material
+				Cost_Overhead
+				Quantity_Produced
+				Sub_Job_Amount
+
+ERP - Invoice			Invoice_Amount			All additive
+				Invoice_Quantity
+				Invoice_Shipped
+
+ERP - Shipment			Actual_Quantity		Quantity_Per_Box, Quantity_Per_Partial_Box not additive
+				Requested_Quantity		Others are additive
+				Boxes
+				Quantity_Per_Box
+				Quantity_Per_Partial_Box
+				Shipment_Amount
+
+Part 2
+
+Cube			Dimensions			Measures
+FinancialSales		Time				Actual_Units
+							Forecase_Units
+							Actual_Amount
+							Forecast_Amount
+							
+FinancialCost		Time, MachineType		Actual_Units
+							Actual_Labor_Cost
+							Actual_Material_Cost
+							Actual_Machine_Cost
+							Actual_Overhead_Cost
+							Budget_Units
+							Budget_Labor_Cost
+							Budget_Material_Cost
+							Budget_Machine_Cost
+							Budget_Overhead_Cost
+							
+Lead			Time, Customer, SalesAgent	Quote_Qty
+							Quote_Price
+							Quote_Value
+							Success
+
+Job			Time, Customer, SalesAgent	Unit_Price
+							Quantity_Ordered
+							Quotation_Amount
+							Quotation_Ordered
+
+SubJob			Time, Customer, MachineType	Cost_Labor
+							Cost_Material
+							Cost_Overhead
+							Quantity_Produced
+							Sub_Job_Amount
+
+Invoice		Time, Customer			Invoice_Amount
+							Invoice_Quantity
+							Invoice_Shipped
+
+Shipment		Time, CustLocation		Actual_Quantity
+							Requested_Quantity
+							Boxes
+							Quantity_Per_Box
+							Quantity_Per_Partial_Box
+							Shipment_Amount
+
+
+

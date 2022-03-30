@@ -7,7 +7,7 @@
 * [Course 2](https://www.coursera.org/learn/dwdesign) - Data Warehouse Concepts, Design, and Data Integration - **Done**
 * [Course 3](https://www.coursera.org/learn/dwrelational) - Relational Database Support for Data Warehouses - **Done**
 * [Course 4](https://www.coursera.org/learn/business-intelligence-tools) - Business Intelligence Concepts, Tools, and Applications - **Done**
-* [Course 5](https://www.coursera.org/learn/data-warehouse-bi-building) - Design and Build a Data Warehouse for Business Intelligence Implementation - **Not started**
+* [Course 5](https://www.coursera.org/learn/data-warehouse-bi-building) - Design and Build a Data Warehouse for Business Intelligence Implementation - **Started**
 
 
 ## Topics
@@ -45,6 +45,14 @@
 - Module 3: Data Visualization and Dashboard Design
 - Module 4: Business Performance Management System
 - Module 5: BI Maturity, Strategy, and Summative Project
+
+### 5. Design and Build a Data Warehouse for Business Intelligence Implementation
+- Module 1: Course Overview
+- Module 2: Data Warehouse Design
+- Module 3: Data Inegration
+- Module 4: Analytical Queries and Summary Data Management
+- Module 5: Data Visualization and Dashboard Design Requirements
+- Module 6: Wrap Up and Project Submission
 
 
 ## Tools

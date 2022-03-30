@@ -1,0 +1,37 @@
+				Customer	Sales Class	Location	Machine Type	Sales Agent
+Profit amount and margin	x		x		x
+Returns			x		x		x
+Shipping delays		x		x		x
+Revenue (job)			x		x		x		x
+Revenue (invoice)		x		x		x				x
+Costs (subjob)					x		x		x
+Ratio among types of costs			x		x		x
+Gross margin			x		x		x		x		x
+Forecasting performance			x		x
+Budgeting performance				x		x		x
+Intra company sales				x		x
+Shared machine usage						x		x
+Lead success rate		x		x						x
+
+
+
+Q1: How is DB time measured in the AWR?
+A:
+- Total time in database calls by foreground sessions 
+- Includes CPU time, IO time and non-idle wait time.
+- not the response time. 
+- Total DB time = sum of DB time for all active sessions
+
+Q2: What is one dictionary table in the AWR? Identify the table name and at least three columns in the table.
+A: 4 Tables
+DBA_Hist_Snapshot (PK: Snap_Id,DBID,Instance_Number. Example columns: statup_time, begin_interval_time, end_interval_time)
+DBA_Hist_System_Event (Example columns: wait_class, total_waits, total_timeouts), 
+DBA_Hist_SQLStat (Example columns: sorts_total, execution_total, rows_processed_total), 
+DBA_Hist_Time_Model (Example columns: stat_id, stat_name, value). 
+
+Q3: What is the name of the Oracle view table used by the Active Session History (ASH) sampler?
+A: V$ACTIVE_SESSION_HISTORY
+
+Q4: Identify at least two dimension columns in the ASH fact table.
+A: SQL statement identifier and object number
+

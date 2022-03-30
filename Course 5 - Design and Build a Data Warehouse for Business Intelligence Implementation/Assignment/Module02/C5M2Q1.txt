@@ -1,0 +1,45 @@
+Dimensions:
+Customer, CustLocation, SalesAgent, MachineType, Time
+
+
+Dimentions	Attributes		Hierarchies					Data Sources
+Customer	Cust_Key		CustRegion					ERP Database
+		Cust_Name		(Country -> State -> City)
+		City
+		Country		Email
+		Credit_Limit		(Top domain -> second domain -> local)
+		E_Mail_Address
+		Phone
+		State
+		Terms_Code
+		ZIP
+		
+CustLocation	Cust_Loc_Key		CustRegion					ERP Database
+		Cust_Name		(Country -> State -> City)
+		City
+		Country		Email
+		E_Mail_Address		(Top domain -> second domain -> local)
+		Phone
+		State
+		Terms_Code
+		ZIP
+		
+SalesAgent	Sales_Agent_Id		(Country -> State)				ERP Database
+		Sales_Agent_Name
+		State
+		Country
+
+MachineType	Machine_Type_Id							ERP Database
+		Manufacturer
+		Model
+		Rate_Per_Hour
+		Number_Of_Machines
+
+Time		Time_Id		(Year -> Quarter -> Month -> Week -> Day)	ERP Database
+		Year
+		Quarter
+		Month
+		Week
+		Day
+
+

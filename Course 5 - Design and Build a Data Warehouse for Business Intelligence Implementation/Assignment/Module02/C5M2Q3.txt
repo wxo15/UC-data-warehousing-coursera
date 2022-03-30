@@ -1,0 +1,31 @@
+Cube			Grain					Unadjusted Size	Fact Table		Sparsity
+FinancialSales
+Coarse			52 weeks				52			60			-0.15
+Fine			365 days				365			60			0.836
+							
+FinancialCost
+Coarse			52 weeks, 10 machine type		520			600			-0.15
+Fine			365 days, 10 machine type		3650			600			0.836
+							
+Lead
+Coarse			12months, 300zip, 50salesagent	12x300x50		250000			-0.39
+Coarse			52weeks, 300zip, 50salesagent		52x300x50		250000			0.679
+Fine			365days, 3000customer, 50salesagent	365x3000x50		250000			0.995
+
+Job
+Coarse			12months, 300zip, 50salesagent	12x300x50		50000			0.722
+Coarse			52weeks, 300zip, 50salesagent		52x300x50		50000			0.936
+Fine			365days, 3000customer, 50salesagent	365x3000x50		50000			0.991
+
+SubJob
+Coarse			52weeks, 300zip, 50salesagent		52x300x10		5x50000		-0.603
+Fine			365days, 3000customer, 50salesagent	365x3000x10		5x50000		0.977
+
+Invoice
+Coarse			52weeks, 300zip			52x300			250000			< -1
+Fine			365days, 3000customer			365x3000		250000			0.772
+
+Shipment
+Coarse			52weeks, 500zip			52x500			2500000		< -1
+Fine			365days, 10000 custlocation		365x10000		2500000		0.315
+
