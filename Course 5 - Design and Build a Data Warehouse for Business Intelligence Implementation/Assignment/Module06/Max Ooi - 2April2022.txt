@@ -1,0 +1,210 @@
+[
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [contract_date] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "contract_date",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [date_promised] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "date_promised",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [date_ship_by] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "date_ship_by",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [date_prod_begin] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "date_prod_begin",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [date_prod_end] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "date_prod_end",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [created_date] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "created_date",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [actual_ship_date] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "actual_ship_date",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [requested_ship_date] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "requested_ship_date",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [invoice_due_date] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "invoice_due_date",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [invoice_sent_date] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "invoice_sent_date",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [invoice_due_date] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "invoice_due_date",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [invoice_sent_date] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "invoice_sent_date",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [report_begin_date_id] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "report_begin_date_id",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [report_end_date_id] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "report_end_date_id",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [report_begin_date_id] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "report_begin_date_id",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "To Date 'yyyyMMdd' [report_end_date_id] (#### Rows)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "report_end_date_id",
+    "expression": "grel:toDate(value, 'yyyyMMdd')",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]

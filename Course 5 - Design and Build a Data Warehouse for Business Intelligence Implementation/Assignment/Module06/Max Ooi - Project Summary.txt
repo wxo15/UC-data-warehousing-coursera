@@ -1,0 +1,49 @@
+Dashboard 1:
+
+Visualization1: Gives information about distribution of quantity ordered, subjob number according to location.
+Visualization2: Shows quote price and quantity for different sales agents in different cities.
+Visualization3: Shows how base price changes with time for different locations.
+Visualization4: Shows delays in shipment.
+
+Q1: How much revenue does a company generate from its job bookings? 
+A1: Revenue can be calculated by multiplying quote price and quote quantity, using Visualization2.
+Q2: How many jobs does each sales agent book? 
+A2: By switching the order between location and agent, we can see the breakdown for each agent at different locations. 
+Q3: How many jobs have not yet shipped or have only partially shipped?
+A3: That can be found out by finding the difference between Date Ship By and the current date. Not yet shipped would have NULL for last ship date, and partially shipped would have a value instead.
+
+
+Dashboard 2:
+
+Visualization1: Gives information about invoice amount for different sales class.
+Visualization2: Shows how are the invoice distributed across each states.
+Visualization3: Shows the change in invoice amount for each customer over time.
+Visualization4: Shows invoice amount across different location and date.
+
+Q1: Which sales class generate the highest invoice amounts?
+A1: Debit Smart
+Q2: How many invoices are generated for a time period?
+A2: This can be gotten from visualization4.
+Q3: What is the total amount invoiced for a time period?
+A3: Using visualization4, change the sequence of location and date, one can get this information.
+
+
+Dashboard 3:
+
+Visualization1: Compares budget overhead cost, labor cost and machine cost.
+Visualization2: Compares actual and forecast amount, for each location across time.
+
+Q1: Determine the location and the machine which have the highest  overall machine 
+and labor cost. Also determine which location has the lowest budget overhead cost.
+A1: Highest: LA, Model 1. Lowest Budget: New York.
+Q2: Which location is seen to have higher forecast amount in comparison to the actual 
+amount on the basis of time period?
+A2: Los Angeles.
+
+Overall:
+The dashboards built were useful in providing the information needed for the questions, but some could be presented in a different way to enable quicker retrieval. For example, dashboard 1, visualization 4 gave a list of all shipment ids with different delay days. This could be summarized in a chart for example.
+
+
+
+
+
