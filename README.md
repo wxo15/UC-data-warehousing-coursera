@@ -2,12 +2,19 @@
 
 [Data Warehousing for Business Intelligence Specialization](https://www.coursera.org/specializations/data-warehousing) offered by University of Colorado through Coursera.
 
+## Capstone Screenshots:
+#### Data Warehouse ERD
+![screenshots](https://github.com/wxo15/UC-data-warehousing-coursera/blob/main/Course%205%20-%20Design%20and%20Build%20a%20Data%20Warehouse%20for%20Business%20Intelligence%20Implementation/Assignment/Module02/C5M2Q4.png)
+#### Pentaho data integration
+![screenshots](https://github.com/wxo15/UC-data-warehousing-coursera/blob/main/Course%205%20-%20Design%20and%20Build%20a%20Data%20Warehouse%20for%20Business%20Intelligence%20Implementation/Assignment/Module03/C5M3Q2.png)
+
+
 ## Courses:
 * [Course 1](https://www.coursera.org/learn/database-management) - Database Management Essentials - **Done**
 * [Course 2](https://www.coursera.org/learn/dwdesign) - Data Warehouse Concepts, Design, and Data Integration - **Done**
 * [Course 3](https://www.coursera.org/learn/dwrelational) - Relational Database Support for Data Warehouses - **Done**
 * [Course 4](https://www.coursera.org/learn/business-intelligence-tools) - Business Intelligence Concepts, Tools, and Applications - **Done**
-* [Course 5](https://www.coursera.org/learn/data-warehouse-bi-building) - Design and Build a Data Warehouse for Business Intelligence Implementation - **Done**
+* [Course 5](https://www.coursera.org/learn/data-warehouse-bi-building) - Design and Build a Data Warehouse for Business Intelligence Implementation (Capstone) - **Done**
 
 
 ## Topics
@@ -57,9 +64,10 @@
 
 ## Tools
 - Generic DBMS (MySQL, PostgresSQL, Oracle etc)
-- WebPivotTable
 - Pentaho Data Integration
 - MicroStrategy Workstation
+- Visual Paradigm (ERD)
+- WebPivotTable
 
 ## Installation
 ### PostgresSQL
