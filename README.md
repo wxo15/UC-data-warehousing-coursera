@@ -2,6 +2,8 @@
 
 [Data Warehousing for Business Intelligence Specialization](https://www.coursera.org/specializations/data-warehousing) offered by University of Colorado through Coursera.
 
+Certificate: [Link](https://coursera.org/share/1e020c9c288510f035d885c2618d5015)
+
 ## Capstone Screenshots:
 #### Data Warehouse ERD
 ![screenshots](https://github.com/wxo15/UC-data-warehousing-coursera/blob/main/Course%205%20-%20Design%20and%20Build%20a%20Data%20Warehouse%20for%20Business%20Intelligence%20Implementation/Assignment/Module02/C5M2Q4.png)
